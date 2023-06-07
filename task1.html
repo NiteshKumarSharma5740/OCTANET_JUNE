@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple landing page using html and css</title>
+<style type="text/css">
+    *{padding: 0; margin:0; box-sizing: border-box;}
+    header{
+        width: 100%;
+        height: 100vh;
+        background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),
+        url('https://img.freepik.com/free-photo/flat-lay-map-with-camera-toy-plane_23-2148255937.jpg?w=740&t=st=1686105805~exp=1686106405~hmac=22d6039f1adc14b11083a7757e7c78532bef078299a7e60026bace8a8ac696ae');
+        background-size: cover;
+        font-family: sans-serif;
+    }
+    nav{
+        width: 100%;
+        height: 100px;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .logo{
+        font-size: 2em;
+        Letter-spacing: 2px;
+    }
+    .menu a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 20px;
+        position: relative;
+    }
+    .menu a:before{
+        content: '';
+        position:absolute;
+        top:0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        border-bottom: 2px solid indianred;
+         transition: 0.2s linear;
+    }
+    .menu a:hover:before{
+        width:90%;
+
+    }
+    .register a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 20px;
+        background: indianred;
+        border-radius: 8px;
+        transition: 0.2s;
+    }
+    .register a:hover{
+        background: transparent;
+        border: 1px solid indianred;
+    }
+    .h-txt{
+        max-width: 650px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%); 
+        text-align: center;
+        color: white;
+    }
+    .h-txt span{
+        letter-spacing: 5px; 
+    }
+    .h-txt H1{
+        font-size: 3.5em;
+    }
+    .h-txt a{
+        text-decoration: none;
+        background: indianred;
+        color: white;
+        padding: 10px 20px;
+        letter-spacing: 5px;
+        border-radius: 4px;
+        transition: 0.2s;
+    }
+    .h-txt a:hover{
+        background: transparent;
+        border: 1px solid indianred;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Travel-N
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Hill stations</a>
+                <a href="#">Best offer's</a>
+                <a href="#">Our sites</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="register">
+                <a href="#">Register</a>
+            </div>
+        </nav>
+
+        <section class="h-txt">
+            <span>Enjoy</span>
+            <H1>International Travel Agency</H1>
+
+            <br>
+            <a href="#">Book Your Trip</a>
+        </section>
+    </header>
+
+</body>
+
+</html>
